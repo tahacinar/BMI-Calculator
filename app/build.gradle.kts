@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.tahacinar.bmicalculator"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.tahacinar.bmicalculator"
