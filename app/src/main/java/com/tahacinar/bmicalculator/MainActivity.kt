@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +25,15 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+    }
+
+    private fun displayResult(bmi:Float) {
+        val resultIndex = findViewById<TextView>(R.id.tvIndex)
+        val resultDescription = findViewById<TextView>(R.id.tvResult)
+        val info = findViewById<TextView>(R.id.tvInfo)
+
+        resultIndex.text = bmi.toString()
+        info.text = "(Normal range is 18.5 - 24.9 )"
+
     }
 }
