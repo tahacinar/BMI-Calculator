@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,26 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+    private fun validateInput(weight:String?,height:String?):Boolean{
+
+        return when{
+            weight.isNullOrEmpty() -> {
+                Toast.makeText(this,"Weight is empty",Toast.LENGTH_LONG).show()
+                return false
+            }
+            height.isNullOrEmpty() -> {
+                Toast.makeText(this,"Height is empty",Toast.LENGTH_LONG).show()
+                return false
+            }
+            else ->{
+                return true
+            }
+
+        }
+    }
+
+
+
 
     private fun displayResult(bmi:Float) {
         val resultIndex = findViewById<TextView>(R.id.tvIndex)
