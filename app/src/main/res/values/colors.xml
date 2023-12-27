@@ -8,4 +8,10 @@
     <color name="card_background">#28425C</color>
     <color name="text_hint">#767B8E</color>
     <color name="button_background">#8C712F</color>
+
+    <color name="under_weight">#855713</color>
+    <color name="normal">#4CAF50</color>
+    <color name="over_weight">#78374D</color>
+    <color name="obese">#872721</color>
+
 </resources>
